@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  sb-app:
+    build: .
+    container_name: "app-oportunidades"
+    ports:
+      - 8081:8080
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodboportunidades"
+    ports:
+      - 27070:27017
